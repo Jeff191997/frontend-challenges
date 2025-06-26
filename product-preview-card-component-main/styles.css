@@ -1,0 +1,140 @@
+/* * Style Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  height: 100vh;
+}
+
+/* * Card Container */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  max-width: 320px;
+  height: auto;
+  margin: auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.product-img img {
+  width: 320px;
+  object-fit: cover;
+}
+
+.product-content {
+  padding: 12px 16px;
+}
+
+.product-type {
+  color: hsl(228, 12%, 48%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+  font-weight: 500;
+  letter-spacing: 0.5em;
+  margin-bottom: 0.7em;
+}
+
+.product-name {
+  color: hsl(212, 21%, 14%);
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 2em;
+  margin-bottom: 0.7em;
+}
+
+.product-detail {
+  color: hsl(228, 12%, 48%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+.price {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1.5em;
+  margin-bottom: 0.7em;
+}
+
+.discount-price {
+  color: hsl(158, 36%, 37%);
+  font-family: 'Fraunces', serif;
+  font-size: 2.2em;
+  font-weight: 700;
+}
+
+.retail-price {
+  color: hsl(228, 12%, 48%);
+  font-size: 1em;
+  text-decoration: line-through;
+}
+
+button {
+  border: 0.5px solid hsl(212, 21%, 14%);
+  border-radius: 12px;
+  background-color: hsl(158, 36%, 37%);
+  width: 100%;
+  height: 3em;
+}
+
+button > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8em;
+  text-decoration: none;
+  color: hsl(30, 38%, 92%);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+a > img {
+  width: 14px;
+  height: 14px;
+  color: hsl(30, 38%, 92%);
+}
+
+button:active {
+  background-color: hsl(158, 42%, 18%);
+  cursor: pointer;
+}
+
+/* * Responsive */
+@media screen and (min-width: 768px) {
+  .product-card {
+    flex-direction: row;
+    max-width: 600px;
+    height: auto;
+    align-items: center;
+  }
+
+  .product-img,
+  .product-content {
+    flex: 1;
+    height: 100%;
+  }
+
+  .product-img img {
+    width: 300px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .product-content {
+    padding: 18px 28px;
+  }
+}
