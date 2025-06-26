@@ -20,7 +20,7 @@ You can browse all my hosted projects from this homepage:
 
 ## 🚀 Live Projects
 
-- [Product Preview Card](https://jeff191997.github.io/frontend-challenges/product-preview-card/)
+- [Product Preview Card](https://jeff191997.github.io/frontend-challenges/product-preview-card-compnent-main/)
 <!-- Add more as you complete them -->
 
 ---
