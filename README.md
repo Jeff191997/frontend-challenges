@@ -21,6 +21,7 @@ You can browse all my hosted projects from this homepage:
 ## 🚀 Live Projects
 
 - [Product Preview Card](https://jeff191997.github.io/frontend-challenges/product-preview-card-component-main/)
+- [Stats Preview Card](https://jeff191997.github.io/frontend-challenges/stats-preview-card-component-main/)
 <!-- Add more as you complete them -->
 
 ---
@@ -43,3 +44,4 @@ git clone git@github.com:jeff191997/frontend-challenges.git
 cd frontend-challenges
 cd project-folder-name
 open index.html   # or use VS Code Live Server
+```
