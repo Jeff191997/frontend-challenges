@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  height: 100vh;
+}
+
+.stats-card {
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  max-width: 320px;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.card-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.card-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  z-index: 1;
+  position: relative;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(277, 64%, 61%);
+  opacity: 0.5;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.card-content {
+  padding: 1.5rem 3rem;
+}
+
+.content-header > h1 {
+  font-family: 'Inter', sans-serif;
+  color: hsl(0, 0%, 100%);
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.content-header span {
+  color: hsl(277, 64%, 61%);
+}
+
+.content-description > p {
+  margin-top: 1.2rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+  color: hsla(0, 0%, 100%, 0.75);
+  text-align: center;
+  line-height: 1.2rem;
+  font-weight: 400;
+  word-spacing: 4px;
+}
+
+.business-stats {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 1.2rem;
+}
+
+.stat {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.stat > h3 {
+  font-weight: 500;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 0.3rem;
+}
+
+.stat > p {
+  font-size: 10px;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
